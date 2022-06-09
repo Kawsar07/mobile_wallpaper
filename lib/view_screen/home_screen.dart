@@ -1,8 +1,10 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:mobile_wallpaper/view_scrren/car_page.dart';
-import 'package:mobile_wallpaper/view_scrren/home_controller.dart';
+import 'package:mobile_wallpaper/view_screen/home_controller.dart';
+
+import 'full_image_page.dart';
+
 
 class HomeView extends StatelessWidget {
   const HomeView({Key? key}) : super(key: key);
@@ -11,7 +13,7 @@ class HomeView extends StatelessWidget {
     final controller = Get.put(HomeController());
     return Scaffold(
         appBar: AppBar(
-          title: Text('Api Get'),
+          title: const Text('Api Get'),
           centerTitle: true,
         ),
         body: controller.obx(
@@ -76,17 +78,13 @@ class HomeView extends StatelessWidget {
                   child: Card(
                     child:CachedNetworkImage(
                       imageUrl: "${item.urls?.full}",
-                      errorWidget: (context, url, error) => Text("error"),
-                      placeholder: (context, url) => CircularProgressIndicator(
-
+                      errorWidget: (context, url, error) => const Text("error"),
+                      placeholder: (context, url) => const CircularProgressIndicator(
                       ),
                     ),
                     // child: Image.network("${item.urls?.full}",),
                   ),
                 );
-
-
-
               }),
             );
           },
