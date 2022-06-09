@@ -13,7 +13,7 @@ class HomeView extends StatelessWidget {
     final controller = Get.put(HomeController());
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Api Get'),
+          title: const Text('Wallpaper App'),
           centerTitle: true,
         ),
         body: controller.obx(
