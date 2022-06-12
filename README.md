@@ -7,6 +7,6 @@ A mobile wallpaper App.![WhatsApp Image 2022-06-12 at 11 36 37 AM](https://user-
 
 This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+This ProjectUsing Getx And Rest Api Use 
 
 
