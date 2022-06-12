@@ -8,7 +8,6 @@ import 'package:flutter_wallpaper_manager/flutter_wallpaper_manager.dart';
 class FullImagePage extends StatefulWidget {
   FullImagePage({Key? key, this.image}) : super(key: key);
   var image;
-
   @override
   State<FullImagePage> createState() => _FullImagePageState();
 }

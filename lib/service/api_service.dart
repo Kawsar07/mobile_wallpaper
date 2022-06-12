@@ -7,8 +7,8 @@ class RemoteService {
   final Dio dio;
   static const String url =
       "https://api.unsplash.com/photos?per_page=30&client_id=CxIbE8GyVA4qC0_X4UMbG2sdEASOCIe7cdOM8qZlPaA";
-
   RemoteService(this.dio);
+
 
   Future<List<WallModels>> getAllPost() async {
     List<WallModels> data = [];
