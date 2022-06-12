@@ -17,7 +17,7 @@ class _FullImagePageState extends State<FullImagePage> {
     try {
       String url = widget.image;
       int location = WallpaperManager
-          .BOTH_SCREEN; // or location = WallpaperManager.LOCK_SCREEN;
+          .BOTH_SCREEN;
       var file = await DefaultCacheManager().getSingleFile(url);
       final bool result =
           await WallpaperManager.setWallpaperFromFile(file.path, location);
